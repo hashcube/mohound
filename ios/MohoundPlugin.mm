@@ -21,6 +21,35 @@
 
 
 - (void) initializeWithManifest:(NSDictionary *)manifest appDelegate:(TeaLeafAppDelegate *)appDelegate {
+  NSLog(@"==================");
+  NSLog(@"==================");
+  NSLog(@"==================");
+  NSLog(@"==================");
+  NSLog(@"Oh i am here");
+  NSDictionary *ios = [manifest valueForKey:@"ios"];
+  NSString *mohoundAppID = [ios valueForKey:@"mohoundAppID"];
+  NSString *mohoundSecretKey = [ios valueForKey:@"mohoundSecretKey"];
+  [MohoundSDK initWithAppKey:mohoundAppID andSecret:mohoundSecretKey];
+  //***************************
+  //***************************
+  //***************************
+  //***************************
+  //***************************
+  //REMOVE THIS IN PRODUCTION
+  //***************************
+  //***************************
+  //***************************
+  //***************************
+  [MohoundSDK setDebugMode:YES];
+  [MohoundSDK ping];
+  //***************************
+  //***************************
+  //***************************
+  //***************************
+  //REMOVE TILL HERE
+  //***************************
+  //***************************
+  //***************************
 }
 
 - (void) applicationWillTerminate:(UIApplication *)app {
@@ -30,9 +59,11 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  [MohoundSDK initWithAppKey:@"d7d91de8f4b0ebd3827b6e6a5de57d77" andSecret:@"5f0f11008a430131c92b7efd45a4c1ef"];
-  [MohoundSDK setDebugMode:YES];
-  [MohoundSDK ping];
+    NSLog(@"======================");
+    NSLog(@"======================");
+    NSLog(@"======================");
+    NSLog(@"======================");
+    NSLog(@"It is being called");
 }
 
 - (void) handleOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication {
