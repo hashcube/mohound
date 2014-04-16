@@ -1,8 +1,5 @@
 #import "PluginManager.h"
+#import <MohoundSDK/MohoundSDK.h>
 
-@interface MohoundPlugin : GCPlugin{
-}
-
-- (void) sendPayment;
-- (void) sendEvent;
+@interface MohoundPlugin : GCPlugin
 @end

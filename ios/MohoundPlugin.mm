@@ -1,9 +1,6 @@
-#import <MohoundSDK/MohoundSDK.h>
 #import "MohoundPlugin.h"
 
 @implementation MohoundPlugin
-
-@synthesize MohoundPlugin;
 
 // The plugin must call super dealloc.
 - (void) dealloc {
@@ -64,6 +61,7 @@
     NSLog(@"======================");
     NSLog(@"======================");
     NSLog(@"It is being called");
+    return true;
 }
 
 - (void) handleOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication {
@@ -87,8 +85,9 @@
       continue;
     }
   }
-
-  [Mohound trackPurchaseWithUSDValue:price forItem:item];
+    NSLog(@"price %@", price);
+    NSLog(@"item %@", item);
+  [MohoundSDK trackPurchaseWithUSDValue:price forItem:item];
 }
 
 - (void) sendEvent:(NSDictionary *)jsonObject {
