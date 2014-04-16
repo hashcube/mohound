@@ -1,0 +1,15 @@
+{
+	"code": [
+		"MohoundPlugin.h",
+		"MohoundPlugin.mm"
+	],
+	"frameworks": [
+		"MohoundSDK.framework",
+		"AdSupport",
+		"StoreKit"
+	],
+	"userDefined": [
+	],
+	"plist": {
+	}
+}
