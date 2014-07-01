@@ -10,6 +10,9 @@
 	],
 	"userDefined": [
 	],
+	"linkerFlags": [
+		"-ObjC"
+	],
 	"plist": {
 	}
 }
