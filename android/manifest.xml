@@ -2,12 +2,6 @@
 <!--END_PLUGINS_MANIFEST-->
 <!--START_PLUGINS_APPLICATION-->
   <!--Mohound-->
-  <!-- intent -->
-  <receiver android:exported="true" android:name="com.mohound.sdk.ReferrerReceiver">
-    <intent-filter>
-      <action android:name="com.android.vending.INSTALL_REFERRER"></action>
-    </intent-filter>
-  </receiver>
   <!-- debug mode: set false to stop debugging -->
   <meta-data android:name="MohoundDebugMode" android:value="" />
   <!-- Keys -->
