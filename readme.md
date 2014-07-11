@@ -63,7 +63,7 @@ mohound.sendPayment(item, price);
 ````!javascript
 mohound.sendEvent(name);
 ````
--name: name of the event `String`
+- name: name of the event `String`
 
 
 Note:
