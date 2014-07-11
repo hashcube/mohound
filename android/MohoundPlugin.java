@@ -5,7 +5,6 @@ import com.mohound.sdk.ReferrerReceiver;
 
 import com.tealeaf.plugin.IPlugin;
 import com.tealeaf.logger;
-import com.tealeaf.EventQueue;
 
 import android.app.Activity;
 import android.content.Intent;
