@@ -1,6 +1,6 @@
-# Game Closure DevKit Plugin: Chartboost
+# Game Closure DevKit Plugin: Mohound
 
-This plugin allows you to cGet mobile app installs using [Mohound](http://mohound.com/) toolkit.  Both iOS and Android targets are supported.
+This plugin allows you to get mobile app installs using [Mohound](http://mohound.com/) toolkit.  Both iOS and Android targets are supported.
 
 ## Usage
 
