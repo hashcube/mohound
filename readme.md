@@ -49,3 +49,25 @@ To specify your game's AppID and AppSignature, edit the `manifest.json "android"
 ~~~
 
 Note that the manifest keys are case-sensitive.
+
+#Usage
+import mohound plugin using `import plugins.mohound.mohound as mohound`
+
+### API
+````!javascript
+mohound.sendPayment(item, price);
+````
+- item: name of item `String`;
+- price: price of item `Integer/Double`
+
+````!javascript
+mohound.sendEvent(name);
+````
+-name: name of the event `String`
+
+
+Note:
+To test `Android's` `INSTALL_REFERRER`
+````!bash
+  adb shell am broadcast -a com.android.vending.INSTALL_REFERRER -n com.yourpackage.yourapp/com.tealeaf.TeaLeafReceiver --es "referrer" "utm_source=test_source&utm_medium=test_medium&utm_term=test_term&utm_content=test_content&utm_campaign=test_name"
+````
