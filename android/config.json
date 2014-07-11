@@ -1,0 +1,7 @@
+{
+  "copyFiles": ["MohoundPlugin.java"],
+  "libraries": [],
+  "jars": ["mohound.jar"],
+  "injectionXML": "manifest.xml",
+  "injectionXSL": "manifest.xsl"
+}

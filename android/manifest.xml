@@ -1,0 +1,10 @@
+<!--START_PLUGINS_MANIFEST-->
+<!--END_PLUGINS_MANIFEST-->
+<!--START_PLUGINS_APPLICATION-->
+  <!--Mohound-->
+  <!-- debug mode: set false to stop debugging -->
+  <meta-data android:name="MohoundDebugMode" android:value="" />
+  <!-- Keys -->
+  <meta-data android:name="MohoundAppKey" android:value="" />
+  <meta-data android:name="MohoundAppSecret" android:value="" />
+<!--END_PLUGINS_APPLICATION-->
