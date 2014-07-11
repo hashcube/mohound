@@ -31,10 +31,14 @@ public class MohoundPlugin implements IPlugin {
     // parse json data
     try {
       JSONObject params = new JSONObject(data);
-      String item = params.optString("item");
-      Double price = params.optDouble("price");
+      final String item = params.optString("item");
+      final Double price = params.optDouble("price");
       if (item != null && !item.isEmpty() && price != null) {
-        Mohound.trackPurchase(price, item);
+        new Thread() {
+          public void run() {
+            Mohound.trackPurchase(price, item);
+          }
+        }.start();
       }
     } catch (Exception e) {
       logger.log(e);
@@ -45,9 +49,13 @@ public class MohoundPlugin implements IPlugin {
     // parse json data
     try {
       JSONObject params = new JSONObject(data);
-      String name = params.optString("name");
+      final String name = params.optString("name");
       if (name != null && !name.isEmpty()) {
-        Mohound.trackAction(name);
+        new Thread() {
+          public void run() {
+            Mohound.trackAction(name);
+          }
+        }.start();
       }
     } catch (Exception e) {
       logger.log(e);
