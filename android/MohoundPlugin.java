@@ -16,13 +16,6 @@ import android.view.*;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.EnumSet;
-import java.util.Iterator;
-import java.lang.Long;
-import java.lang.Float;
-
-import android.R.id.*;
-
 public class MohoundPlugin implements IPlugin {
   Context _ctx;
   Intent _intent;
@@ -82,8 +75,8 @@ public class MohoundPlugin implements IPlugin {
   }
 
   public void setInstallReferrer(String referrer) {
-    ReferrerReceiver reciever = new ReferrerReceiver();
-    reciever.onReceive(this._ctx, this._intent);
+    ReferrerReceiver receiver = new ReferrerReceiver();
+    receiver.onReceive(this._ctx, this._intent);
   }
 
   public void onActivityResult(Integer request, Integer result, Intent data) {
