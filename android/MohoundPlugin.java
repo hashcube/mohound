@@ -27,7 +27,7 @@ public class MohoundPlugin implements IPlugin {
     Mohound.onCreate(activity);
   }
 
-  public void sendPayment (String data) {
+  public void trackPurchase(String data) {
     // parse json data
     try {
       JSONObject params = new JSONObject(data);
@@ -41,7 +41,7 @@ public class MohoundPlugin implements IPlugin {
     }
   }
 
-  public void sendEvent (String data) {
+  public void trackAction(String data) {
     // parse json data
     try {
       JSONObject params = new JSONObject(data);

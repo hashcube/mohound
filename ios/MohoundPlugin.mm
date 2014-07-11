@@ -43,7 +43,7 @@
 - (void) didBecomeActive:(NSDictionary *)jsonObject {
 }
 
-- (void) sendPayment:(NSDictionary *)jsonObject {
+- (void) trackPurchase:(NSDictionary *)jsonObject {
   NSString *item =  [NSString stringWithFormat:@""];
   NSNumber *price;
 
@@ -63,7 +63,7 @@
   [MohoundSDK trackPurchaseWithUSDValue:price forItem:item];
 }
 
-- (void) sendEvent:(NSDictionary *)jsonObject {
+- (void) trackAction:(NSDictionary *)jsonObject {
   NSString *name =  [NSString stringWithFormat:@""];
 
   for (id key in jsonObject) {

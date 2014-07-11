@@ -10,7 +10,7 @@ var Mohound = Class(function() {
     logger.log('{mohound} Registering for events on startup');
   }
 
-  this.sendPayment = function(item, price) {
+  this.trackPurchase = function(item, price) {
     logger.log('{mohound} Sending Payments');
 
     var param = {
@@ -18,17 +18,17 @@ var Mohound = Class(function() {
       'price': price
     };
 
-    pluginSend('sendPayment', param);
+    pluginSend('trackPurchase', param);
   }
 
-  this.sendEvent = function(name) {
+  this.trackAction = function(name) {
     logger.log('{mohound} Sending of Event');
 
     var param = {
       'name': name
     };
 
-    pluginSend('sendEvent', param);
+    pluginSend('trackAction', param);
   }
 });
 

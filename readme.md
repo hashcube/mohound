@@ -55,16 +55,15 @@ import mohound plugin using `import plugins.mohound.mohound as mohound`
 
 ### API
 ````!javascript
-mohound.sendPayment(item, price);
+mohound.trackPurchase(item, price);
 ````
 - item: name of item `String`;
 - price: price of item `Integer/Double`
 
 ````!javascript
-mohound.sendEvent(name);
+mohound.trackAction(name);
 ````
 - name: name of the event `String`
-
 
 Note:
 To test `Android's` `INSTALL_REFERRER`
