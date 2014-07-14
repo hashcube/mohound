@@ -83,9 +83,9 @@ public class MohoundPlugin implements IPlugin {
     this._intent = intent;
   }
 
-  public void setInstallReferrer(String referrer) {
+  public void setInstallReferrer(Context context, Intent intent) {
     ReferrerReceiver receiver = new ReferrerReceiver();
-    receiver.onReceive(this._ctx, this._intent);
+    receiver.onReceive(context, intent);
   }
 
   public void onActivityResult(Integer request, Integer result, Intent data) {
