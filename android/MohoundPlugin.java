@@ -46,6 +46,7 @@ public class MohoundPlugin implements IPlugin {
   }
 
   public void trackAction(String data) {
+    /*
     // parse json data
     try {
       JSONObject params = new JSONObject(data);
@@ -60,6 +61,7 @@ public class MohoundPlugin implements IPlugin {
     } catch (Exception e) {
       logger.log(e);
     }
+    */
   }
 
   public void onResume() {
