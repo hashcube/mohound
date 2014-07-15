@@ -7,4 +7,9 @@
   <!-- Keys -->
   <meta-data android:name="MohoundAppKey" android:value="" />
   <meta-data android:name="MohoundAppSecret" android:value="" />
+  <receiver android:exported="true" android:name="com.mohound.sdk.ReferrerReceiver">
+    <intent-filter>
+      <action android:name="com.android.vending.INSTALL_REFERRER"></action>
+    </intent-filter>
+  </receiver>
 <!--END_PLUGINS_APPLICATION-->

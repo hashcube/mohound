@@ -1,7 +1,6 @@
 package com.tealeaf.plugin.plugins;
 
 import com.mohound.sdk.Mohound;
-import com.mohound.sdk.ReferrerReceiver;
 
 import com.tealeaf.plugin.IPlugin;
 import com.tealeaf.logger;
@@ -84,8 +83,6 @@ public class MohoundPlugin implements IPlugin {
   }
 
   public void setInstallReferrer(String referrer) {
-    ReferrerReceiver receiver = new ReferrerReceiver();
-    receiver.onReceive(this._ctx, this._intent);
   }
 
   public void onActivityResult(Integer request, Integer result, Intent data) {
