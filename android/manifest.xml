@@ -1,4 +1,6 @@
 <!--START_PLUGINS_MANIFEST-->
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <!--END_PLUGINS_MANIFEST-->
 <!--START_PLUGINS_APPLICATION-->
   <!--Mohound-->
@@ -7,6 +9,8 @@
   <!-- Keys -->
   <meta-data android:name="MohoundAppKey" android:value="" />
   <meta-data android:name="MohoundAppSecret" android:value="" />
+  <meta-data android:name="com.google.android.gms.version"
+             android:value="@integer/google_play_services_version" />
   <receiver android:exported="true" android:name="com.mohound.sdk.ReferrerReceiver">
     <intent-filter>
       <action android:name="com.android.vending.INSTALL_REFERRER"></action>
